@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/settings_title" android:key="watson_settings">
+
+   <com.kudzu.android.ibmwatsonlivewallpaper.NumPref android:key="fps"
+        android:title="Max FPS"
+        android:summary="The higher the faster more intense Watson is."
+        android:dialogMessage="Max FPS"
+        android:defaultValue="24"
+        android:text=" fps"
+        android:max="59"
+  
+        />
+	   <com.kudzu.android.ibmwatsonlivewallpaper.NumPref android:key="hairs"
+        android:title="Max Wiskers"
+        android:summary="The number of wiskers revolving around Watson"
+        android:dialogMessage="Max Wiskers"
+        android:defaultValue="14"
+        android:text=" wiskers"
+        android:max="49"
+  
+        />
+</PreferenceScreen>
