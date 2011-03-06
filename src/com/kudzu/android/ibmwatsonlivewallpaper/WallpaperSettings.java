@@ -42,6 +42,16 @@ public class WallpaperSettings extends PreferenceActivity implements
 		getPreferenceManager().getSharedPreferences()
 				.registerOnSharedPreferenceChangeListener(this);
 
+        getPreferenceManager().findPreference("pref_image").setOnPreferenceClickListener(new OnPreferenceClickListener()
+        {
+            @Override
+            public boolean onPreferenceClick(Preference preference)
+            {
+        		Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://w-ll.org/a/jmp.php?d=watson"));
+        		startActivity(myIntent);
+                return true;
+            }
+        });
 	}
 
 	@Override

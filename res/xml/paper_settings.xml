@@ -21,4 +21,9 @@
         android:max="49"
   
         />
+        
+        
+	<Preference android:key="pref_image" android:title="Donate to the Author"
+		android:summary="Support the development of great app." />
+		
 </PreferenceScreen>
